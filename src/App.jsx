@@ -20,6 +20,8 @@ function App() {
       document.getElementById('signIn'),
       { theme : "outline", size : "large" }
     )
+
+    google.accounts.id.prompt();
   },[])
 
   return (
