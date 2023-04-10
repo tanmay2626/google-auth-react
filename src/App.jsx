@@ -6,6 +6,7 @@ function App() {
   const [ user, setUser ] = useState({});
 
   const handleCallbackResponse = (res) =>{
+    console.log(res.credential);
     const cred = jwt_decode(res.credential);
     console.log(cred);
     setUser(cred);
